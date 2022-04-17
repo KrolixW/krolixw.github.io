@@ -1,10 +1,7 @@
-function make_red(){
-    window.Telegram.WebApp.MainButton.color = "#FF0000";
-    window.Telegram.WebApp.MainButton.onClick(make_blue);
-}
 function make_blue(){
-    window.Telegram.WebApp.MainButton.color = "#00FF00";
-    window.Telegram.WebApp.MainButton.onClick(make_red);
+    let color;
+    color = prompt("Please choose a color:","#FFFFFF");
+    window.Telegram.WebApp.MainButton.color = color;
 }
 document.getElementById("demo").innerHTML = "Date : ";
 window.Telegram.WebApp.MainButton.color = "#FF00FF"
