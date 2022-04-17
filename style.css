@@ -13,6 +13,8 @@ p {
     color: var(--tg-theme-hint-color);
 }
 button {
+    align-self: center;
+    text-align: center;
     color: var(--tg-theme-button-text-color);
     background-color: var(--tg-theme-button-color);
 }
