@@ -14,7 +14,7 @@ p {
 }
 .button {
     text-align: center;
-    margin: 0 0 30% 30%;
+    margin: 0 30% 0 30%;
     align-self: center;
     text-decoration: none;
     border-radius: 15px;
