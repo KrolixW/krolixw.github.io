@@ -1,5 +1,7 @@
 /* CSS styles */
-body {color: var(--tg-theme-bg-color);}
+body {
+    color: var(--tg-theme-bg-color);
+}
 h1 {
     font-family: Impact, sans-serif;
       color: var(--tg-theme-text-color);
