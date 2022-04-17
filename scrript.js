@@ -26,16 +26,17 @@ ctx.lineWidth = 5
 window.addEventListener("touchmove", (e) => {
     // initially previous mouse positions are null
     // so we can't draw a line
+    let touch = e.changedTouches[0]
     if(prevX == null || prevY == null){
         // Set the previous mouse positions to the current mouse positions
-        prevX = e.clientX
-        prevY = e.clientY
+        prevX = touch.clientX
+        prevY = touch.clientY
         return
     } 
 
     // Current mouse position
-    let currentX = e.clientX
-    let currentY = e.clientY
+    let currentX = touch.clientX
+    let currentY = touch.clientY
 
     // Drawing a line from the previous mouse position to the current mouse position
     ctx.beginPath()
