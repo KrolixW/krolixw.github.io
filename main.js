@@ -18,13 +18,13 @@ function createRipple(event) {
         ripple.remove();
     }
     button.appendChild(circle); 
-  }
-function add_click(){
     clicks++;
     document.getElementById('click_counter').innerText = "Button was clicked "+clicks+" time(s)";
-}
+  }
+// function add_click(){
+// }
 for (const button of buttons){
     button.addEventListener('click',createRipple);
 }
 document.getElementById('welcome').innerText += " "+firstname +" "+lastname;
-document.getElementById('clicker').onclick = add_click;
+// document.getElementById('clicker').onclick = add_click;

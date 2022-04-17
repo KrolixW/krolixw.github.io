@@ -15,6 +15,7 @@ p {
 .button {
     position: relative;
     overflow: hidden;
+    height: 100px;
     text-align: center;
     margin: 0 30% 0 30%;
     align-self: center;
@@ -22,9 +23,6 @@ p {
     border-radius: 15px;
     color: var(--tg-theme-button-text-color);
     background-color: var(--tg-theme-button-color);
-}
-.button:active{
-    opacity: 50%;
 }
 span.ripple {
     position: absolute; /* The absolute position we mentioned earlier */
