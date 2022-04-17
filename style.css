@@ -2,11 +2,18 @@
 body {
     background-color: var(--tg-theme-bg-color);
 }
+
 h1 {
-    font-family: Impact, sans-serif;
-      color: var(--tg-theme-text-color);
-    }
+    text-align: center;
+    color: var(--tg-theme-text-color);
+}
+
 p {
-      color: var(--tg-theme-hint-color);
-    }
+    text-align: center;
+    color: var(--tg-theme-hint-color);
+}
+button {
+    color: var(--tg-theme-button-text-color);
+    background-color: var(--tg-theme-button-color);
+}
           
