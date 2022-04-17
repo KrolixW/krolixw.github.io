@@ -12,9 +12,10 @@ p {
     text-align: center;
     color: var(--tg-theme-hint-color);
 }
-button {
-    align-self: center;
-    text-align: center;
+.button {
+    padding: auto;
+    text-decoration: none;
+    border-radius: 50%;
     color: var(--tg-theme-button-text-color);
     background-color: var(--tg-theme-button-color);
 }

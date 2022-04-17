@@ -8,3 +8,4 @@ function add_click(){
 }
 document.getElementById('welcome').innerText += " "+firstname +" "+lastname;
 document.getElementById('my_butt').onclick = add_click;
+document.getElementById('my_butt2').onclick = add_click;
