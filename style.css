@@ -1,4 +1,9 @@
-*{
-    margin: 0;
-    padding: 0;
-}
+/* CSS styles */
+h1 {
+    font-family: Impact, sans-serif;
+      color: var(--tg-theme-text-color);
+    }
+p1 {
+      color: var(--tg-theme-hint-color);
+    }
+          
