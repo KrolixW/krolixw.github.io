@@ -4,8 +4,7 @@ let lastname = window.Telegram.WebApp.initDataUnsafe.user.last_name;
 let clicks = 0;
 function add_click(){
     clicks++;
-    document.getElementById('button_output').innerText = "Button was clicked "+clicks+" time(s)";
+    document.getElementById('click_counter').innerText = "Button was clicked "+clicks+" time(s)";
 }
 document.getElementById('welcome').innerText += " "+firstname +" "+lastname;
-document.getElementById('my_butt').onclick = add_click;
-document.getElementById('my_butt2').onclick = add_click;
+document.getElementById('clicker').onclick = add_click;
