@@ -23,7 +23,7 @@ let prevY = null
 // How thick the lines should be
 ctx.lineWidth = 5
 
-window.addEventListener("mousemove", (e) => {
+window.addEventListener("touchmove", (e) => {
     // initially previous mouse positions are null
     // so we can't draw a line
     if(prevX == null || prevY == null){
