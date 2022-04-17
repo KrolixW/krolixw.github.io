@@ -2,7 +2,7 @@
 let firstname = window.Telegram.WebApp.initDataUnsafe.user.first_name;
 let lastname = window.Telegram.WebApp.initDataUnsafe.user.last_name;
 let clicks = 0;
-const buttons = document.getElementsByTagName("button");
+const buttons = document.getElementsByClassName("button");
 function createRipple(event) {
     const button = event.currentTarget;
     const circle = document.createElement("span");
