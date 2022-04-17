@@ -7,4 +7,4 @@ function add_click(){
     document.getElementById('button_output').innerText = "Button was clicked "+clicks+" time(s)";
 }
 document.getElementById('welcome').innerText += " "+firstname +" "+lastname;
-document.getElementById('my_butt').onclick(add_click);
+document.getElementById('my_butt').onclick = add_click;
