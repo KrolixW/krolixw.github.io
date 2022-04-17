@@ -1,9 +1,9 @@
 /* CSS styles */
 h1 {
     font-family: Impact, sans-serif;
-      color: var(--tg-theme-text-color);
+      color: --tg-theme-text-color;
     }
 p1 {
-      color: var(--tg-theme-hint-color);
+      color: --tg-theme-hint-color;
     }
           
