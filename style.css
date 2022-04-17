@@ -1,6 +1,6 @@
 /* CSS styles */
 body {
-    color:chocolate;
+    background-color: var(--tg-theme-bg-color);
 }
 h1 {
     font-family: Impact, sans-serif;
