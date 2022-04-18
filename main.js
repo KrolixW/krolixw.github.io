@@ -1,6 +1,8 @@
 // JavaScript
 let firstname = window.Telegram.WebApp.initDataUnsafe.user.first_name;
 let lastname = window.Telegram.WebApp.initDataUnsafe.user.last_name;
+const mainbutton = window.Telegram.WebApp.MainButton;
+const closing =  window.Telegram.WebApp.close;
 let clicks = 0;
 const buttons = document.getElementsByClassName("button");
 function createRipple(event) {
@@ -20,6 +22,21 @@ function createRipple(event) {
     button.appendChild(circle); 
 }
 function add_click(){
+    if(clicks >= 5 || mainbutton.isVisible != true){
+        mainbutton.show();
+        mainbutton.setText('What is happening?');
+    }
+    }
+    if (clicks >= 25 || mainbutton.isProgressActive != true){
+        mainbutton.showProgress();
+        mainbutton.setText('My powers are returning!');
+    }
+    if (clicks >= 50 || mainbutton.isActive != true){
+        mainbutton.enable();
+        mainbutton.setText('Congratulation! You may leave now!');
+        mainbutton.onClick(closing)
+
+    }
     clicks++;
     document.getElementById('click_counter').innerText = "Button was clicked "+clicks+" time(s)";
 }
