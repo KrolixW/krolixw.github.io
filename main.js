@@ -24,7 +24,7 @@ function createRipple(event) {
     button.appendChild(circle); 
 }
 function add_click(){
-    if (clicks >= 1 & webapp.isExpanded != true){
+    if ((clicks >= 1) && (webapp.isExpanded != true)){
         webapp.expand();
     }
     if ((25 > clicks) && (clicks >= 5) && (mainbutton.isVisible != true)){
