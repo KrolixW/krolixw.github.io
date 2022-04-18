@@ -1,8 +1,10 @@
 // JavaScript
-let firstname = window.Telegram.WebApp.initDataUnsafe.user.first_name;
-let lastname = window.Telegram.WebApp.initDataUnsafe.user.last_name;
-const mainbutton = window.Telegram.WebApp.MainButton;
-const closing =  window.Telegram.WebApp.close;
+const webapp = window.Telegram.WebApp;
+let firstname = webapp.initDataUnsafe.user.first_name;
+let lastname = webapp.initDataUnsafe.user.last_name;
+const mainbutton = webapp.MainButton;
+const closing =  webapp.close;
+mainbutton.disable();
 let clicks = 0;
 const buttons = document.getElementsByClassName("button");
 function createRipple(event) {
@@ -22,6 +24,9 @@ function createRipple(event) {
     button.appendChild(circle); 
 }
 function add_click(){
+    if (clicks >= 1 & webapp.isExpanded != true){
+        webapp.expand();
+    }
     if(clicks >= 5 & mainbutton.isVisible != true){
         mainbutton.show();
         mainbutton.setText('What is happening?');
