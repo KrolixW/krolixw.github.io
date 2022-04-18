@@ -27,11 +27,11 @@ function add_click(){
     if (clicks >= 1 & webapp.isExpanded != true){
         webapp.expand();
     }
-    if(clicks >= 5 & mainbutton.isVisible != true){
+    if(25 > clicks >= 5 & mainbutton.isVisible != true){
         mainbutton.show();
         mainbutton.setText('What is happening?');
     }
-    if (clicks >= 25 & mainbutton.isProgressActive != true){
+    if (50 > clicks >= 25 & mainbutton.isProgressActive != true){
         mainbutton.showProgress();
         mainbutton.setText('My powers are returning!');
     }
