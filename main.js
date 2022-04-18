@@ -37,6 +37,7 @@ function add_click(){
     }
     if (clicks >= 50 & mainbutton.isActive != true){
         mainbutton.enable();
+        mainbutton.hideProgress();
         mainbutton.setText('Congratulation! You may leave now!');
         mainbutton.onClick(closing);
 
