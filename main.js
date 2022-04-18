@@ -26,7 +26,6 @@ function add_click(){
         mainbutton.show();
         mainbutton.setText('What is happening?');
     }
-    }
     if (clicks >= 25 || mainbutton.isProgressActive != true){
         mainbutton.showProgress();
         mainbutton.setText('My powers are returning!');
