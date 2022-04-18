@@ -22,15 +22,15 @@ function createRipple(event) {
     button.appendChild(circle); 
 }
 function add_click(){
-    if(clicks >= 5 || mainbutton.isVisible != true){
+    if(clicks >= 5 & mainbutton.isVisible != true){
         mainbutton.show();
         mainbutton.setText('What is happening?');
     }
-    if (clicks >= 25 || mainbutton.isProgressActive != true){
+    if (clicks >= 25 & mainbutton.isProgressActive != true){
         mainbutton.showProgress();
         mainbutton.setText('My powers are returning!');
     }
-    if (clicks >= 50 || mainbutton.isActive != true){
+    if (clicks >= 50 & mainbutton.isActive != true){
         mainbutton.enable();
         mainbutton.setText('Congratulation! You may leave now!');
         mainbutton.onClick(closing);
