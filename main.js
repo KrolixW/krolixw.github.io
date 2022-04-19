@@ -24,6 +24,7 @@ function createRipple(event) {
     button.appendChild(circle); 
 }
 function add_click(){
+    clicks++;
     if ((clicks >= 1) && (webapp.isExpanded != true)){
         webapp.expand();
     }
@@ -42,7 +43,6 @@ function add_click(){
         mainbutton.onClick(closing);
 
     }
-    clicks++;
     document.getElementById('click_counter').innerText = "Button was clicked "+clicks+" time(s)";
 }
 for (const button of buttons){
